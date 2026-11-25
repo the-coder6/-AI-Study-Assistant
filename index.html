@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Study Assistant - Smart educational prompt generator">
+    <title>AI Study Assistant | Smart Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="brand">
+        <div class="logo">✦</div>
+        <div>
+            <h1>StudyAI</h1>
+            <small>Smart Learning Assistant</small>
+        </div>
+    </div>
+    <a href="#generator" class="header-btn">Get Started ↗</a>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="tag">✦ POWERED BY GENERATIVE AI</div>
+        <h2>Learn Smarter.<br><span>Achieve More.</span></h2>
+        <p>Your personal AI study companion. Generate study notes, quizzes,
+        explanations and assignments with intelligent prompts.</p>
+        <a href="#generator" class="primary-btn">Start Creating →</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Smart Notes</h3>
+            <p>Create structured study notes for any topic.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>AI Quiz</h3>
+            <p>Prepare practice questions and answers.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Easy Learning</h3>
+            <p>Understand complex concepts in simple language.</p>
+        </div>
+    </section>
+
+    <section class="generator" id="generator">
+        <div class="section-heading">
+            <div class="tag">YOUR AI WORKSPACE</div>
+            <h2>AI Content Generator</h2>
+            <p>Enter your requirements and create your custom AI prompt.</p>
+        </div>
+
+        <div class="generator-box">
+            <form id="promptForm">
+                <label for="topic">Enter your topic</label>
+                <input id="topic" type="text"
+                    placeholder="e.g. Generative Artificial Intelligence"
+                    required>
+
+                <div class="form-grid">
+                    <div>
+                        <label for="task">Choose your task</label>
+                        <select id="task">
+                            <option value="detailed study notes">Study Notes</option>
+                            <option value="10 multiple-choice questions with answers">Quiz Generator</option>
+                            <option value="a simple explanation with examples">Topic Explainer</option>
+                            <option value="creative assignment ideas and a detailed outline">Assignment</option>
+                            <option value="a presentation outline with slide-wise content">Presentation</option>
+                            <option value="important interview questions and answers">Interview Preparation</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="level">Learning level</label>
+                        <select id="level">
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="language">Language</label>
+                        <select id="language">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Hinglish</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="length">Content length</label>
+                        <select id="length">
+                            <option>Detailed</option>
+                            <option>Short</option>
+                            <option>Medium</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="extra">Additional instructions (optional)</label>
+                <textarea id="extra" rows="3"
+                    placeholder="Example: Include real-life examples and important definitions"></textarea>
+
+                <button type="submit" class="primary-btn generate-btn">
+                    ✨ Generate AI Prompt
+                </button>
+            </form>
+
+            <div id="outputSection" class="output-section" hidden>
+                <div class="output-title">
+                    <h3>Your Generated Prompt</h3>
+                    <span>READY</span>
+                </div>
+
+                <textarea id="result" rows="9" readonly></textarea>
+
+                <div class="output-actions">
+                    <button id="copyBtn" class="primary-btn">Copy Prompt</button>
+                    <button id="chatBtn" class="secondary-btn">Open ChatGPT ↗</button>
+                </div>
+                <p id="message" class="message" aria-live="polite"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how">
+        <div class="section-heading">
+            <div class="tag">SIMPLE PROCESS</div>
+            <h2>How It Works</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <span>01</span>
+                <h3>Enter Topic</h3>
+                <p>Choose the subject you want to learn.</p>
+            </div>
+            <div class="step">
+                <span>02</span>
+                <h3>Select Task</h3>
+                <p>Choose notes, quiz, explanation or assignment.</p>
+            </div>
+            <div class="step">
+                <span>03</span>
+                <h3>Generate Prompt</h3>
+                <p>Copy the prompt and use it with ChatGPT.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">✦ StudyAI</div>
+    <p>Generative AI and Applications | Educational Project</p>
+    <p>Designed and developed as an academic project.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
